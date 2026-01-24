@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../../../python-learning"
+		},
+		{
+			"name": "d1mini-air-quality-sensor",
+			"path": "../.."
+		}
+	],
+	"settings": {}
+}
