@@ -8,8 +8,14 @@ This is a DIY ESP8266 based air quality monitor with a CO2 and PM2.5 sensor, whi
 * Real-time information updates
 * Measurements are shown beside recommended Air Quality Index levels
 
-
 ### Hardware required:
  * LOLIN Wemos D1 Mini V4.0.0
  * SenseAir S8 CO2 Sensor
  * Plantower PMS5003 Particulate Sensor
+
+### Setup:
+ * Install Arduino IDE and enable ESP8266 board support
+ * Update the WiFi credentials in the code
+ * Plug in the D1 Mini and flash the code
+ * Find the D1 Mini’s IP address (Can be found though router or modem settings)
+ * Access the web interface on a device at the IP address
