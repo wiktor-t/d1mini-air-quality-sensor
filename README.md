@@ -17,5 +17,5 @@ This is a DIY ESP8266 based air quality monitor with a CO2 and PM2.5 sensor, whi
  * Install Arduino IDE and enable ESP8266 board support
  * Update the WiFi credentials in the code
  * Plug in the D1 Mini and flash the code
- * Find the D1 Mini’s IP address (Can be found though router or modem settings)
+ * Find the D1 Mini’s IP address (Can be found through router or modem settings)
  * Access the web interface on a device at the IP address
