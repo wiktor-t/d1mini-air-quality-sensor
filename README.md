@@ -7,6 +7,7 @@ This is a DIY ESP8266 based air quality monitor with a CO2 and PM2.5 sensor, whi
 * Web interface accessible on local devices
 * Real-time information updates
 * Measurements are shown beside recommended Air Quality Index levels
+* Dark mode toggle button
 
 ### Hardware required:
  * LOLIN Wemos D1 Mini V4.0.0
