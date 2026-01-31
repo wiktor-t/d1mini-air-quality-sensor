@@ -55,15 +55,19 @@ void handleRoot() {
   readCO2();
   readPMS();
 
-  server.send(
-    200,
-    "text/html",
-    "<h1>Air Quality</h1>"
-    "<p>CO2: " + String(co2ppm) + " ppm</p>"
-    "<p>PM1: " + String(pm1) + " ug/m3</p>"
-    "<p>PM2.5: " + String(pm25) + " ug/m3</p>"
-    "<p>PM10: " + String(pm10) + " ug/m3</p>"
-  );
+  String html = "<!DOCTYPE html><html><head>";
+  html += "<style>";
+  html += "body.dark { background: #333; color: white; }";
+  html += "</style></head><body>";
+  html += "<button onclick='document.body.classList.toggle(\"dark\")'>Dark Mode</button>";
+  html += "<h1>Air Quality</h1>";
+  html += "<p>CO2: " + String(co2ppm) + " ppm</p>";
+  html += "<p>PM1: " + String(pm1) + " ug/m3</p>";
+  html += "<p>PM2.5: " + String(pm25) + " ug/m3</p>";
+  html += "<p>PM10: " + String(pm10) + " ug/m3</p>";
+  html += "</body></html>";
+
+  server.send(200, "text/html", html);
 }
 
 void setup() {
